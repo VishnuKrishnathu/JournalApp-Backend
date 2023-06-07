@@ -1,5 +1,5 @@
 import makeCreateUser from "./create-user";
-import { User } from "data-access";
+import { User } from "../data-access";
 
 const createUser = makeCreateUser({ User });
 

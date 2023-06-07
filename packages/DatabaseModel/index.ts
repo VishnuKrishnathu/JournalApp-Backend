@@ -7,6 +7,7 @@ export default function connectDatabase({
     database,
     user,
     pool,
+    password
 }: ConnectDB): Kysely<IDatabase> {
     return new Kysely<IDatabase>({
         dialect: new PostgresDialect({
@@ -14,6 +15,7 @@ export default function connectDatabase({
                 host,
                 database,
                 user,
+                password,
                 max: pool,
             }),
         }),

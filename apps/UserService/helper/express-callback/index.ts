@@ -26,4 +26,4 @@ export default function makeExpressCallback(
                 res.status(500).send({ error: "An unkown error occurred." }),
             );
     };
-};
+}

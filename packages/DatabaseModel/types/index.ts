@@ -9,4 +9,5 @@ export interface ConnectDB {
     user: string;
     database: string;
     pool: number;
+    password: string;
 }

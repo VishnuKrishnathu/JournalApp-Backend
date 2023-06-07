@@ -7,6 +7,7 @@ type handleError = (
 };
 
 const errorHandler: handleError = (err, status = 422) => {
+    console.log(err);
     if (err instanceof Error) {
         return {
             status,

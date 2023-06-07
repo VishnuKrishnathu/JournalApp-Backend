@@ -1,4 +1,4 @@
-import { User } from "data-access";
+import { User } from "../data-access";
 
 export type userInfo = {
     email: string;

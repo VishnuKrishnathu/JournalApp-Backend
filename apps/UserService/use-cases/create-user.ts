@@ -1,4 +1,4 @@
-import makeUser from "entities";
+import makeUser from "../entities";
 import { userInfo, makeCreateUser } from "./index.d";
 
 export default function makeCreateUser({ User }: makeCreateUser) {

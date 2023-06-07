@@ -7,6 +7,7 @@
     "module": "dist/esm/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "migrate:db": "ts-node migrations/index.ts",
         "clean": "rm -rf dist",
         "build": "npm run clean && concurrently -n esm,cjs \"npm run build:esm\" \"npm run build:cjs\"",
         "build:esm": "tsc -p tsconfig.json",
@@ -18,7 +19,8 @@
     "dependencies": {
         "concurrently": "^8.1.0",
         "kysely": "^0.25.0",
-        "pg": "^8.11.0"
+        "pg": "^8.11.0",
+        "ts-node": "^10.9.1"
     },
     "files": [
         "build/",

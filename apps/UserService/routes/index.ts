@@ -1,6 +1,6 @@
 import { Router } from "express";
-import makeCallback from "helper/express-callback";
-import { postUser } from "controllers";
+import makeCallback from "../helper/express-callback";
+import { postUser } from "../controllers";
 
 const router = Router();
 

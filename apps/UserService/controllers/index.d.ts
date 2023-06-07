@@ -1,4 +1,4 @@
-import { createUser } from "use-cases";
+import { createUser } from "../use-cases";
 
 export type makePostUser = {
     createUser: typeof createUser;
