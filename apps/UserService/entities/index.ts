@@ -9,4 +9,5 @@ const makeUser = buildMakeUser({
     },
     Id: Id,
 });
+
 export default makeUser;

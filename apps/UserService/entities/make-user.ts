@@ -20,11 +20,9 @@ export default function buildMakeUser({ hashPassword, Id }: buildMakeUser) {
             premium,
             modified_at,
         } = { ...default_user, ...user };
-        let email_regex =
-            /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+        let email_regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
         let email_addr = email.toLowerCase().trim();
-        console.log(email_addr)
         if (!email_regex.test(email_addr)) {
             throw new Error("Email address is invalid");
         }

@@ -16,7 +16,7 @@ export default function makeUsersDb() {
 
     async function findOne(
         conditions: Array<`${keyof InsertUser} ${ComparisonOperator} ${string}`>,
-        select: Array<keyof InsertUser>,
+        select: Array<keyof InsertUser> = [],
     ) {
         let query = db.selectFrom("user").select(select);
         conditions.forEach(val => {
@@ -34,6 +34,6 @@ export default function makeUsersDb() {
 
     return Object.freeze({
         insertOne,
-        findOne
+        findOne,
     });
 }
