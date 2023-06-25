@@ -1,0 +1,7 @@
+{
+    "env": {
+        "ENVIRONMENT": "development",
+        "GOOGLE_CLIENT_ID": "752826968917-qrusa7i1ld12l72oab6e2gebpoc74du0.apps.googleusercontent.com",
+        "GOOGLE_CLIENT_SECRET": "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"
+    }
+}

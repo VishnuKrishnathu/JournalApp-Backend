@@ -1,5 +1,5 @@
 import express from "express";
-import userRoutes from "./routes";
+import userRoutes from "./UserService/routes";
 const serverless = require('serverless-http');
 
 const app: express.Application = express();

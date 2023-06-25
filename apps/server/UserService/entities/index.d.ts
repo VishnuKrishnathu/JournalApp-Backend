@@ -14,4 +14,5 @@ export type buildMakeUser = {
         getId: () => string;
         validate: (id: string) => boolean;
     };
+    comparePassword: (pass: string, hashed_pass: string) => Promise<boolean>;
 };
